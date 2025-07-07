@@ -1,0 +1,34 @@
+# Site settings
+title: Your Blog Title
+description: "A Jekyll blog hosted on GitHub Pages"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://cemoody.github.io" # the base hostname & protocol for your site
+author: Your Name
+email: your.email@example.com
+
+# Jekyll settings
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Build settings
+permalink: /:year/:month/:day/:title/
+
+# Exclude from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - node_modules
+
+# Social links (optional)
+github_username: cemoody
+# twitter_username: your_username
+# linkedin_username: your_username
+
+# Google Analytics (optional)
+# google_analytics: your_tracking_id 

@@ -52,9 +52,11 @@ Your post content here...
 To run the site locally:
 
 1. Install Ruby and Bundler
-2. Run `bundle install` to install dependencies
+2. Run `bundle install` to install GitHub Pages compatible dependencies
 3. Run `bundle exec jekyll serve` to start the development server
 4. Visit `http://localhost:4000` to see your site
+
+Note: This setup uses the `github-pages` gem to ensure local development matches GitHub Pages exactly.
 
 ## Customization
 
