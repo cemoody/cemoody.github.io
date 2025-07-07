@@ -29,10 +29,12 @@ published: true  # Set to false to save drafts
 
 Jekyll uses the Liquid templating language. Here are some handy filters:
 
+{% raw %}
 - **Date formatting**: `{{ post.date | date: "%B %d, %Y" }}`
 - **Truncate text**: `{{ post.content | truncate: 150 }}`
 - **Strip HTML**: `{{ post.excerpt | strip_html }}`
 - **Capitalize**: `{{ post.title | capitalize }}`
+{% endraw %}
 
 ## Code Syntax Highlighting
 
@@ -112,6 +114,7 @@ These plugins work well with GitHub Pages:
 
 Create reusable components in the `_includes` folder:
 
+{% raw %}
 ```html
 <!-- _includes/post-meta.html -->
 <div class="post-meta">
@@ -121,12 +124,15 @@ Create reusable components in the `_includes` folder:
   {% endif %}
 </div>
 ```
+{% endraw %}
 
 Then use it in your layouts:
 
+{% raw %}
 ```liquid
 {% include post-meta.html date=page.date author=page.author %}
 ```
+{% endraw %}
 
 ## Final Thoughts
 
